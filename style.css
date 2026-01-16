@@ -1,15 +1,39 @@
 /* ===== Base / Mobile First ===== */
+:root {
+    --bg-page: #F1F1F4;
+    --bg-section: #D7D7E0;
+    --bg-dark: #0B0B0E;
+
+    --brand: #22222C;      /* logo color */
+    --text-main: #22222C;
+    --text-muted: #6F6F90;
+
+    --border-subtle: #47475C;
+    --accent-soft: #A3A3B8;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #222;
     font-size: 16px;
+    background: var(--bg-page);
+    color: var(--text-main);
 }
 
 header {
-    background: #111;
+    background:
+        radial-gradient(
+            80% 60% at 50% 0%,
+            rgba(34, 34, 44, 0.35),
+            rgba(11, 11, 14, 0.95)
+        ),
+        linear-gradient(
+            rgba(11,11,14,0.95),
+            rgba(11,11,14,0.95)
+        );
     color: #fff;
+
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -28,8 +52,8 @@ header p {
     display: inline-block;
     margin-top: 1.25rem;
     padding: 0.75rem 1.25rem;
-    background: #fff;
-    color: #111;
+    background: var(--brand);
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -41,7 +65,7 @@ section {
 }
 
 section:not(.cta) {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-subtle);
 }
 
 h2 {
@@ -65,12 +89,17 @@ h2 {
 .services li::before {
     content: "✔";
     margin-right: 0.5rem;
-    color: #111;
+}
+
+.services li::before,
+.why li::before {
+    color: var(--brand);
 }
 
 /* CTA */
 .cta {
-    background: #f4f4f4;
+    background: var(--bg-section);
+    color: var(--text-main);
     text-align: center;
 }
 
@@ -78,7 +107,7 @@ h2 {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.25rem;
-    background: #111;
+    background: var(--brand);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -86,8 +115,8 @@ h2 {
 
 /* Footer */
 footer {
-    background: #111;
-    color: #fff;
+    background: var(--brand);
+    color: #BDBDCC;
     text-align: center;
     padding: 1.25rem 1rem;
     font-size: 0.85rem;
@@ -138,6 +167,6 @@ a:focus {
     }
 
     .header-cta:hover {
-        background: #eee;
+        background: #333342;
     }
 }
