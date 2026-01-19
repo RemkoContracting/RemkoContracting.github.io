@@ -92,6 +92,21 @@ h2 {
 }
 
 /* Services */
+.service-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.service-images img {
+    width: 45%;
+    height: auto;
+    border-radius: 4px;
+    flex: 0 0 calc(33% - 1rem);
+}
+
 .services ul {
     list-style: none;
     padding: 0;
@@ -176,6 +191,21 @@ a:focus {
     footer {
         font-size: 0.9rem;
     }
+
+    .service-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.service-images img {
+    width: 25%;
+    height: auto;
+    border-radius: 4px;
+    flex: 0 0 calc(33% - 1rem);
+}
 }
 
 @media (hover: hover) {
