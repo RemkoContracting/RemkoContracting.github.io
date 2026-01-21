@@ -193,19 +193,19 @@ a:focus {
     }
 
     .service-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    justify-content: center;
-}
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
 
-.service-images img {
-    width: 25%;
-    height: auto;
-    border-radius: 4px;
-    flex: 0 0 calc(33% - 1rem);
-}
+    .service-images img {
+        width: 25%;
+        height: auto;
+        border-radius: 4px;
+        flex: 0 0 calc(33% - 1rem);
+    }
 }
 
 @media (hover: hover) {
