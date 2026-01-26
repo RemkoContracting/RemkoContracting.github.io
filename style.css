@@ -131,6 +131,42 @@ h2 {
     text-align: center;
 }
 
+/* Contact + Connect */
+.contact-connect {
+    display: grid;
+    gap: 2rem;
+}
+
+.connect {
+    padding: 1rem;
+    background: var(--bg-section);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.social-links img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.social-links {
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+.social-links img {
+    width: 44px;
+    height: 44px;
+}
+
+.social-links a {
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
 /* Footer */
 footer {
     background: var(--brand);
@@ -177,6 +213,22 @@ footer {
         width: 55%;
         max-width: 500px;
     }
+
+    .contact-connect {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .connect {
+        padding: 0px;
+        background: none;
+        border-radius: none;
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: left;
+    }
 }
 
 /* Hover */
@@ -184,5 +236,13 @@ footer {
     .header-cta:hover,
     .cta a:hover {
         background: #333;
+    }
+
+    .social-links a:hover img {
+        transform: scale(1.08);
+    }
+
+    .social-links img {
+        transition: transform 0.15s ease;
     }
 }
