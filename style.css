@@ -193,9 +193,12 @@ footer {
     }
 
     .why-image img {
-        width: 55%;
+        width: 60%;
         max-width: 500px;
     }
+
+    .why-content { order: 2; }
+    .why-image   { order: 1; }
 }
 
 /* Hover */
