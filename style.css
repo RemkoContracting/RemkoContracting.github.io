@@ -33,10 +33,6 @@ header {
     background-repeat: no-repeat;
 }
 
-.header-text {
-    margin-top: 1.5rem;
-}
-
 .header-title {
     font-size: 1.1rem;
     font-weight: 700;
@@ -180,10 +176,6 @@ footer {
     .site-logo {
         width: 80vw;
         max-width: 600px;
-    }
-
-    .header-text {
-        margin-top: 0;
     }
 
     .header-title {
