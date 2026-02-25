@@ -21,21 +21,36 @@ body {
 }
 
 /* Header */
-header {
-    background:
-        radial-gradient(
-            80% 60% at 50% 0%,
-            rgba(111, 111, 144, 0.55),
-            var(--brand)
-        );
-    color: #fff;
-    padding: 2rem 1rem;
+.hero {
     text-align: center;
-    box-shadow: inset 0 -40px 60px rgba(0, 0, 0, 0.25);
+    background-color: var(--brand);
 }
 
-header p {
-    margin-top: 0.75rem;
+.hero-image {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+
+    background: url("img/3d_logo_mobile.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+/* Text section (styled similar to connect section) */
+.hero-text {
+    text-align: center;
+    background: var(--bg-section);
+    padding: 2rem 1rem;
+}
+
+.hero-text .tagline {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .site-logo {
@@ -164,6 +179,19 @@ footer {
 
 /* Desktop */
 @media (min-width: 768px) {
+
+    @media (min-width: 768px) {
+
+        .hero-image {
+            background: url("img/3d_logo_desktop.webp") no-repeat center top;
+            background-size: contain;
+
+            width: 932px;
+            height: 233px; 
+            margin: 0 auto;         
+            padding: 0;
+        }
+    }
 
     section {
         max-width: 900px;
